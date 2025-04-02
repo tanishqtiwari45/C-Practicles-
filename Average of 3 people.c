@@ -8,9 +8,10 @@ int main() {
     int ages[3];
     int sum = 0, eldestAge = 0, youngestAge = 1000;
     char eldest[100], youngest[100];
+    int i;
 
     // Input names and ages of 3 persons
-    for (int i = 0; i < 3; i++) {
+    for (i = 0; i < 3; i++) {
         printf("Enter the name of person %d: ", i + 1);
         fgets(names[i], 100, stdin); // Correctly specify the size of each name buffer
         names[i][strcspn(names[i], "\n")] = '\0'; // Remove newline character
